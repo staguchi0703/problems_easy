@@ -8,11 +8,13 @@ VScodeでat_coderのABCに参加するための準備
 2. ローカルに複製する。　`git clone {repo}`
    * 複製するとローカルリポジトリのディレクトリに自動で飛ぶ。
    * そこで`code .`すれば、そのまま今回のコンテストに必要なディレクトリだけを持ったworkingspaceが立ち上がる。
-3. テストケースの値を各問題フォルダの`X_input.txt`にペースト
-4. 回答をX.pyに記入
+3. テストケースの値を各問題フォルダの`input.txt`にペースト
+4. 回答をa_main.pyに記入
 5. 実行して動作確認する。terminalからのpython実行をキーバインドするのが〇
-6. cwdは、クローンしてきたリポジトリの先頭にいること（フォルダA~Fが見えているところ）。
-7. 19行目からを回答へ投げる
-8. 終わったらpushして公開する
+6. `output.txt`に期待する出力をいれて、`resolve.py`に提出するコードを入力しておけば、`test_resolve_form_input_files.py`でunittestが実行できる。
+7. chrome pluginのAtcoder_unittestの内容を`test_pasted_from_page.py`にペーストすれば、全ての出力例の確認ができる。
+
 
 ## その他
+* 画面スペースに余裕があれば、`resolve.py`と`test_pasted_from_page.py`と`terminal`の3画面で作業した方が速いかも。
+* 途中の確認をprintでバグするなら`a_main.py`でいじる方が分かりやすい。
