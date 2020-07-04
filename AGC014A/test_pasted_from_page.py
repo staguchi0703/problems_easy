@@ -1,4 +1,5 @@
 #
+from collections import deque
 from resolve import resolve
 ####################################
 ####################################
@@ -7,7 +8,12 @@ from resolve import resolve
 import sys
 from io import StringIO
 import unittest
+import collections
+import numpy as np
 
+que = collections.deque([range(100)])
+deque
+array = np.array([range(1, 4)])
 
 class TestClass(unittest.TestCase):
     def assertIO(self, input, output):
