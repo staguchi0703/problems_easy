@@ -20,18 +20,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """ATCODER"""
-        output = """3"""
+        input = """20"""
+        output = """23"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """HATAGAYA"""
-        output = """5"""
+        input = """2"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """SHINJUKU"""
-        output = """0"""
+        input = """99992"""
+        output = """100003"""
         self.assertIO(input, output)
 
 
