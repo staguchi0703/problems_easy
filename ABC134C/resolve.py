@@ -10,7 +10,7 @@ def resolve():
 
     for i in range(N):
         if i == max_index:
-            del As[max_index]
+            As.remove(max_num)
             print(max(As))
         else:
             print(max_num)
