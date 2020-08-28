@@ -20,21 +20,13 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2 3
-abc
-arc"""
-        output = """#####
-#abc#
-#arc#
-#####"""
+        input = """5"""
+        output = """11"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """1 1
-z"""
-        output = """###
-#z#
-###"""
+        input = """86"""
+        output = """939587134549734843"""
         self.assertIO(input, output)
 
 
